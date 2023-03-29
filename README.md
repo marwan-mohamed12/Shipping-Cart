@@ -1,7 +1,7 @@
 # Shipment Cart React.js
 
 - This is a simple shipment cart project using React.js, where you can add items, increase and decrease the quantity, clear all items, calculate the total price and the number of items is displayed on the cart icon notification.
-- <a href="https://stripemenu-react.netlify.app/">Live Demo</a>
+- <a href="https://shopping-cart-reactjsss.netlify.app/">Live Demo</a>
 
 ## Installation
 
