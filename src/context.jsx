@@ -66,6 +66,8 @@ const AppProvider = ({ children }) => {
                 ...state,
                 clearItems,
                 removeItem,
+                increaseItem,
+                decreaseItem,
                 toggleAmount,
             }}
         >
