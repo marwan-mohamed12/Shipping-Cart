@@ -1,5 +1,4 @@
 import React from "react";
-import { CLEAR_ITEMS } from "./action";
 import CartItem from "./CartItem";
 import { useGlobalContext } from "./context";
 

@@ -23,8 +23,8 @@ const reducer = (state, action) => {
 
     if (action.type === INCREASE_ITEM) {
         let tempCart = state.cart.map((cartItem) => {
-            if (cartItem.id === action.payload.id) {
-                return { ...cartItem, amount: cartItem.amount++ };
+            if (cartItem.id === action.payload) {
+                return { ...cartItem, amount: cartItem.amount + 1 };
             }
             return cartItem;
         });
@@ -35,7 +35,7 @@ const reducer = (state, action) => {
         let tempCart = state.cart
             .map((cartItem) => {
                 if (cartItem.id === action.payload.id) {
-                    return { ...cartItem, amount: cartItem.amount-- };
+                    return { ...cartItem, amount: cartItem.amount - 1 };
                 }
                 return cartItem;
             })
@@ -75,11 +75,11 @@ const reducer = (state, action) => {
             .map((cartItem) => {
                 if (cartItem.id === action.payload.id) {
                     if (action.payload.type === "inc") {
-                        return { ...cartItem, amount: cartItem.amount++ };
+                        return { ...cartItem, amount: cartItem.amount + 1 };
                     }
 
                     if (action.payload.type === "dec") {
-                        return { ...cartItem, amount: cartItem.amount-- };
+                        return { ...cartItem, amount: cartItem.amount - 1 };
                     }
                 }
                 return cartItem;

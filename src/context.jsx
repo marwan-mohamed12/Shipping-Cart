@@ -16,10 +16,10 @@ const url = "https://course-api.com/react-useReducer-cart-project";
 const AppContext = createContext();
 
 const defaultState = {
+    lodaing: false,
     cart: [],
     total: 0,
     amount: 0,
-    lodaing: false,
 };
 
 const AppProvider = ({ children }) => {
@@ -30,15 +30,15 @@ const AppProvider = ({ children }) => {
     };
 
     const removeItem = (id) => {
-        dispatch({ type: REMOVE_ITEM, payload: { id } });
+        dispatch({ type: REMOVE_ITEM, payload: id });
     };
 
     const increaseItem = (id) => {
-        dispatch({ type: INCREASE_ITEM, payload: { id } });
+        dispatch({ type: INCREASE_ITEM, payload: id });
     };
 
     const decreaseItem = (id) => {
-        dispatch({ type: DECREASE_ITEM, payload: { id } });
+        dispatch({ type: DECREASE_ITEM, payload: id });
     };
 
     const fetchData = async () => {
@@ -66,8 +66,6 @@ const AppProvider = ({ children }) => {
                 ...state,
                 clearItems,
                 removeItem,
-                increaseItem,
-                decreaseItem,
                 toggleAmount,
             }}
         >
