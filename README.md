@@ -1,6 +1,6 @@
 # Shopping Cart React.js
 
-- This is a simple shipment cart project using React.js, where you can add items, increase and decrease the quantity, clear all items, calculate the total price and the number of items is displayed on the cart icon notification.
+- This is a simple shopping cart project using React.js, where you can add items, increase and decrease the quantity, clear all items, calculate the total price and the number of items is displayed on the cart icon notification.
 - <a href="https://shoppingcart-react-marwan.netlify.app/">Live Demo</a>
 
 ## Installation
